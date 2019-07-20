@@ -1,3 +1,161 @@
-.red {
-  color: red;
+body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  letter-spacing: 0.16px;
+  line-height: 1.6;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ a {
+  text-decoration: none;
 }
+
+ul {
+  list-style: none;
+}
+
+
+/* Navbar styles */
+.navbar{
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.17);
+  position: relative;
+  height: 70px;
+}
+
+.navbar > .navbar-container {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  max-width: 1200px;
+  margin: 0 auto;  
+}
+
+.navbar > .navbar-container > img {
+  height: 50px;
+}
+
+.navbar > .navbar-container > .navbar-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  margin: 0px 30px;
+}
+
+.navbar > .navbar-container  a {
+  color: black;
+}
+
+.navbar > .navbar-container > .navbar-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 200px;
+}
+
+.navbar > .navbar-mobile {
+  justify-content: space-between;
+  display: none;
+  align-items: center;
+  padding: 0px 15px;
+  height: 100%;
+}
+
+.navbar > .navbar-mobile > .menu-toggle {
+  color:#161464;
+} 
+
+.navbar > .navbar-mobile > .menu-panel {
+  position: absolute;
+  top: 70px;
+  left: 0; 
+  background-color: darkgray;
+  width: 100%;
+  padding: 10px;
+  flex-direction: column;
+  display: none;
+}
+
+.navbar > .navbar-mobile.active > .menu-panel {
+  display: flex;
+}
+
+.navbar > .navbar-mobile > .menu-panel > .menu-item > a{
+  color: black;
+} 
+
+.navbar > .navbar-mobile > img {
+  height: 50px;
+}
+
+@media (max-width:576px) {
+  .navbar > .navbar-container {
+    display: none;
+  }
+
+  .navbar > .navbar-mobile {
+    display: flex;
+  }
+}
+
+/* ___________________________________________________________________________________________________________________________________ */
+
+/* footer style */
+.footer {
+  width: 100%;
+  background-color: #333333;
+  color: #CCCCCC;
+}
+
+.footer > .footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  padding: 50px 16px;
+  margin: 0 auto;
+}
+
+.footer > .footer-container a {
+  color: #CCCCCC;
+}
+
+.footer .social-icon  img {
+  height: 40px;
+}
+
+.footer .social-icon ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .icon-list {
+  display: flex;
+} 
+
+.footer .social-icon  li {
+  padding-right: 10px;
+}
+
+.footer .copyright {
+  padding-bottom: 16px;
+  padding-top: 16px;
+  background-color: gray;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media (max-width:640px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+  } 
+}
+
+/* ______________________________________________________________________________________________________________________________ */
