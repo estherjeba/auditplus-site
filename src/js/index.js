@@ -1,5 +1,5 @@
 // CSS
-require('../css/main.css');
+require('../css/main.scss');
 
 // Javascript
 window.$ = require('jquery');
