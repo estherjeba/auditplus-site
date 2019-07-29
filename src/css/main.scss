@@ -3,12 +3,9 @@ html {
 }
 
 body{
-  /* height: 100%;
-  width: 100%; */
   margin: 0;
   letter-spacing: 0.1rem;
   word-spacing: 0.2rem;
-  /* line-height: 1.6; */
   font-size: 1.6rem;
   font-family: Merriweather,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; 
 }
@@ -23,10 +20,8 @@ ul {
 
 
 /* Navbar styles */
-.navbar{
-  /* box-shadow: 0 0.1rem 0.1rem 0 rgba(0,0,0,0.17); */
-  /* position: relative; */
-  height: 70px;
+.navbar {
+  height: 7rem;
 
   & .navbar-container {
     display: flex;
@@ -72,7 +67,7 @@ ul {
   }
 
   & img {
-    height: 50px;
+    height: 5rem;
   }
 
   & .navbar-mobile {
@@ -112,78 +107,88 @@ ul {
 /* ___________________________________________________________________________________________________________________________________ */
 
 /* footer style */
+
 .footer {
   width: 100%;
   background-color: #333333;
   color: #CCCCCC;
-}
+  line-height: 3rem;
 
-.footer > .footer-container {
-  display: flex;
-  justify-content: space-around;
-  max-width: 1200px;
-  padding: 50px 16px;
-  margin: 0 auto;
-}
-
-.footer > .footer-container a {
-  color: #CCCCCC;
-}
-
-.footer .social-icon  img {
-  height: 40px;
-}
-
-.footer .social-icon ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer .icon-list {
-  display: flex;
-} 
-
-.footer .social-icon  li {
-  padding-right: 10px;
-}
-
-.footer .copyright {
-  padding-bottom: 16px;
-  padding-top: 16px;
-  background-color: gray;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-@media (max-width:640px) {
-  .footer-container {
+  & .footer-container {
     display: flex;
-    flex-wrap: wrap;
-  } 
+    justify-content: space-around;
+    max-width: 120rem;
+    padding: 5rem 1.6rem;
+    margin: 0 auto;
+
+  & a {
+      color: #CCCCCC;
+    }
+  }
+
+  & .social-icon  ul {
+    display: flex;
+    justify-content: space-between;
+    
+
+    & img {
+      height: 4rem;      
+    }
+
+    & .icon-list {
+      display: flex;     
+    }
+
+    & li {
+      padding-right: 1rem;     
+    } 
+  }
+
+  & .copyright {
+    padding-bottom: 1.6rem;
+    padding-top: 1.6rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  @media only screen and (max-width:640px) {
+    & .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+    } 
+  }
 }
 
 /* ______________________________________________________________________________________________________________________________ */
 
 /* section style */
-.section {
-  // min-height: 100vh;
-  // word-spacing: 5px;
-}
 
 .content {
 
-  position: relative;
+  & .skew-container-1 {
+    position: relative;
 
-  & .skew-1 {
-    height: 90rem;
-    background: #f1f2f9;
-    box-shadow:  0 0 0 1px rgba(0, 0, 0, 0.0);
-    transform: skewY(-5deg) scaleY(0.65) translateY(15%);
-    top: 120rem;
-    position: absolute;
-    width: 100%;
-    z-index: -1;
+    & .skew {
+      height: 100rem;
+      background: #f1f2f9;
+      box-shadow:  0 0 0 0.1rem rgba(0, 0, 0, 0.0);
+      transform: skewY(-5deg) scaleY(0.65) translateY(15%);
+      top: -25rem;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+
+      @media only screen and (max-width: 725px) {
+        height: 120rem;
+        top: -35rem;
+      }
+
+      @media only screen and (max-width: 475px) {
+        height: 140rem;
+        top: -45rem;
+      }
+    }  
   }
 
   & .banner {
@@ -198,7 +203,7 @@ ul {
     background-attachment: fixed;
 
     & .banner-content {
-      max-width: 1200px;
+      max-width: 120rem;
       margin:  auto;
       color: white;
       text-align: center;
@@ -220,18 +225,18 @@ ul {
   & .section-generic {
     display: flex;
     flex-direction: row;
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
     padding: 0 3rem;
 
     & img {
-      height: 400px;
-      width: 350px; 
+      height: 40rem;
+      width: 35rem; 
     }
 
     & .section-item {
       display: flex;
-      height: 60rem;
+      height: 70rem;
       flex: 0 0 50%;
       justify-content: center;
       align-items: center;
@@ -250,11 +255,14 @@ ul {
         color: #525f7d;
         align-self: flex-start;
         text-align: left;
+        line-height: 3rem;
+        font-size: 1.8rem;
       }
     }
 
     @media only screen and (max-width: 1000px) {
       flex-direction: column;
+      margin: 10rem 0;
     }
   }
 }
