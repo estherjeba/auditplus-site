@@ -31,8 +31,8 @@ pipeline {
     }
     stage('Deploy Image') {
       steps{
-         script {
-            docker.withRegistry( ECRURL,ECRCRED ) {
+        script {
+          docker.withRegistry( ECRURL,ECRCRED ) {
             docker.image(IMAGE).push(VERSION)
           }
         }
