@@ -28,5 +28,13 @@
   },
   "dependencies": {
     "jquery": "^3.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estherjeba/auditplus-site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/estherjeba/auditplus-site/issues"
+  },
+  "homepage": "https://github.com/estherjeba/auditplus-site#readme"
 }
